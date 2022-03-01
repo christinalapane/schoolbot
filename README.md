@@ -1,2 +1,2 @@
 # schoolbot
-Contains the files for wgubot
+Contains the files for schoolbot
