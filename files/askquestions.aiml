@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>Pick a career</pattern>
+	    <template>I'll ask a series of questions to help me find a suitable career
+	    <br></br>
+	    Do you excell programming?
+	    <button>
+	        <text>Yes!</text>
+	        <postback>web question</postback>
+	    </button>
+	    <button>
+	        <text>Nope</text>
+	        <postback>no code one</postback>
+	    </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>web question</pattern>
+	    <template>Do you enjoy design?
+	    <button>
+	        <text>Yes!</text>
+	        <postback>webdesign</postback>
+	    </button>
+	    <button>
+	        <text>Nope</text>
+	        <postback>no code two</postback>
+	    </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>webdesign</pattern>
+	    <template>Check out Web Developer!
+	    <button>
+	        <text>Okay!</text>
+	        <postback>web developer</postback>
+	    </button>
+	    <button>
+	        <text>No thanks</text>
+	        <postback>nothanks</postback>
+	    </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>no code one</pattern>
+	    <template>Do you have a basic understanding of programming?
+	    <button>
+	        <text>Yes!</text>
+	        <postback>yes code one </postback>
+	    </button>
+	    <button>
+	        <text>Not the slightest</text>
+	        <postback>no code two</postback>
+	    </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>yes code one</pattern> 
+	    <template>
+	        Do you prefer working with software or hardware?
+	        <button>
+	            <text>Hardware</text>
+	            <postback>hardware</postback>
+	        </button>
+	        <button>
+	            <text>Software</text>
+	            <postback>software</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>software</pattern>
+	    <template> Check out Software Tester! 
+	    <button>
+	        <text>Okay!</text>
+	        <postback>software tester</postback>
+	    </button>
+	    <button>
+	        <text>No thanks!</text>
+	        <postback>nothanks</postback>
+	    </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>hardware</pattern>
+	    <template>
+	        Check out Network Architecture!
+	        <button>
+	        <text>Okay!</text>
+	        <postback>network</postback>
+	    </button>
+	    <button>
+	        <text>No thanks!</text>
+	        <postback>nothanks</postback>
+	    </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>no code two</pattern>
+	    <template>
+	        Are you a numbers person or prefer managing?
+	        <button>
+	            <text>Numbers</text>
+	            <postback>analyzedata</postback>
+	        </button>
+	        <button>
+	            <text>Management</text>
+	            <postback>analyst</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>analyzedata</pattern>
+	    <template>
+	        Check out Data Analyst!
+	        <button>
+	            <text>Okay!</text>
+	            <postback>data analytics</postback>
+	        </button>
+	        <button>
+	            <text>No thanks</text>
+	            <postback>nothanks</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>analyst</pattern>
+	    <template>
+	        Check out Systems Analyst!
+	        <button>
+	            <text>Okay!</text>
+	            <postback>systems analyst</postback>
+	        </button>
+	        <button>
+	            <text>No thanks</text>
+	            <postback>nothanks</postback>
+	        </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>nothanks</pattern>
+	    <template>
+	        I'm going to reset so you can read about the top five careers!
+	        <button>
+	            <text>Okay!</text>
+	            <postback>Pick a career</postback>
+	        </button>
+	        <button>
+	            <text>I'm Okay</text>
+	            <postback>no job</postback>
+	        </button>
+	    </template>
+	</category>
+	
+</aiml>

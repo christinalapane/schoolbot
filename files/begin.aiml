@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>begin</pattern>
+	    <template>Welcome <get name="name"></get>! I'm WGU Bot and I'm here to help Computer Science students learn about career options once they graduate! 
+	    Pick from the following choices below: 
+	    <button>
+	        <text>Learn about five different careers</text>
+	        <postback>Popular Careers</postback>
+	    </button>
+	    
+	    <button>
+	        <text>Help me pick a career</text>
+	        <postback>Pick a career</postback>
+	    </button>
+	    
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern> Popular Careers</pattern>
+	    <template> Here are the five top careers for Computer Science graduates:
+	    
+	    <button> 
+	    <text>Data Analyst</text>
+	    <postback>data analytics</postback>
+	    </button>
+	    
+	    <button>
+	        <text>Software Tester</text>
+	        <postback>software tester</postback>
+	    </button>
+	    
+	    <button>
+	        <text>Web Developer</text>
+	        <postback>web developer</postback>
+	    </button>
+	    
+	    <button>
+	        <text>Systems Analyst</text>
+	        <postback>systems analyst</postback>
+	    </button>
+	    
+	    <button>
+	        <text>Network Architect</text>
+	        <postback>network</postback>
+	    </button>
+	    </template>
+	</category>
+</aiml>

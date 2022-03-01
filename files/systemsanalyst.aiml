@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+		<category>
+	    <pattern>systems analyst</pattern>
+	 <template>
+                As a system analyst you will work closely with management to determine if the company's computer system is benefiting the business. 	        
+	        <br></br><br></br>
+	        <link>
+	            <text>To learn more, click here</text>
+	            <url>https://www.wgu.edu/blog/how-become-computer-systems-analyst1712.html</url>
+	        </link>
+	        <button>
+	            <text>Click here to explore more careers</text>
+	            <postback>Popular Careers</postback>
+	        </button>
+	        <button>
+	            <text>Click here to pick a career</text>
+	            <postback>Pick a career</postback>
+	        </button>
+	    </template>
+	    </category>
+</aiml>

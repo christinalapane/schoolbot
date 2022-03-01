@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>data analytics</pattern>
+	 <template>
+	        As a data analyst you will inspect, model, and interpret data that is beneficial to the success of a business.You do this through data mining, designing and maintaining data models
+	        
+	        <br></br><br></br>
+	        <link>
+	            <text>To learn more, click here</text>
+	            <url>https://www.wgu.edu/career-guide/information-technology/data-analyst-career.html</url>
+	        </link>
+	        <button>
+	            <text>Click here to explore more careers</text>
+	            <postback>Popular Careers</postback>
+	        </button>
+	        <button>
+	            <text>Click here to pick a career</text>
+	            <postback>Pick a career</postback>
+	        </button>
+	    </template>
+	    </category>
+</aiml>

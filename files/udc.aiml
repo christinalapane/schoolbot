@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>*</pattern>
+	    <template>
+	        Are you new to this system?
+	        <button>
+	            <text>Yes</text>
+	            <postback>New</postback>
+	        </button>
+	        <button>
+	            <text>No</text>
+	            <postback>Return</postback>
+	        </button>
+	    </template>
+	 
+	</category>
+	
+	<category>
+	    <pattern>New</pattern>
+	    <template>Welcome to WGU Student Services. Type "my name is _______" so I know who I'm talking to</template>
+	</category>
+	
+	<category>
+	    <pattern>Return</pattern>
+	    <template>I just got a little confused. Type "begin" to check out some careers or "help" to speak to a human</template>
+	</category>
+</aiml>

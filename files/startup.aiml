@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>hello</pattern>
+	    <template>Hello! Welcome to WGU Student Services. Type "my name is _______" so I know who I'm talking to. </template>
+	</category>
+	
+	<category>
+	    <pattern>MY NAME IS *</pattern>
+	    <template>Welcome, <set name ="name"><star/></set>. Type "begin to start your career outlook</template>
+	</category>
+	
+	<category>
+	    <pattern>hey</pattern>
+	    <template>Hey there! Welcome to WGU Student Services. Type "my name is _____" so I know who I'm talking to. </template>
+	</category>
+	
+	<category>
+	    <pattern>help ^</pattern>
+	    <template> Looks like a robot only help so much, time for some human help. Would you like to schedule an appointment with your program mentor? 
+	    <button>
+	        <text>Yes please</text>
+	        <postback>schedule</postback>
+	    </button>
+	    <button>
+	        <text>Ew, people</text>
+	        <postback>noschedule</postback>
+	    </button>
+	    </template>
+	</category>
+	
+	<category>
+	    <pattern>schedule</pattern>
+	    <template>Pick a time range for your program mentor to give you a call
+	    <button>
+	        <text> 9:00 AM - 10:00 AM</text>
+	        <postback>thanks</postback>
+	    </button>
+	    <button>
+	        <text>11:00 PM - 12:00 PM</text>
+	        <postback>thanks</postback>
+	    </button>
+	    <button>
+	        <text>1:00 PM - 2:00 PM</text>
+	        <postback>thanks</postback>
+	    </button>
+	    <button>
+	        <text>3:00 PM - 4:00 PM</text>
+	        <postback>thanks</postback>
+	    </button>
+	    </template>
+	    	</category>
+	    	
+	    	<category>
+	    	    <pattern>thanks</pattern>
+	    	    <template><get name ="name"></get>, your program mentor will reach out to at the time you chose. Have a great day!</template>
+	    	</category>
+	
+	<category>
+	    <pattern>noschedule</pattern>
+	            <template>I get it <get name ="name"></get>. Type "help" if you change your mind or "begin" to check out some careers</template>
+	</category>
+	    
+	    <category>
+	        <pattern> support ^</pattern>
+	        <template>Please type "help" to schedule an appointment with your program mentor</template>
+	    </category>
+	    
+	    <category>
+	        <pattern> appointment ^</pattern>
+	        <template>Please type "help" to schedule an appointment with your program mentor</template>
+	    </category>
+	    
+	    
+	    
+	  
+
+	 <category>
+	        <pattern>no job</pattern>
+	        <template> <get name ="name"></get>, it looks like none of the careers I provided seem suitable to your skills. Please type "help" so your program mentor can help advise you</template>
+	    </category>
+	
+	
+</aiml>
